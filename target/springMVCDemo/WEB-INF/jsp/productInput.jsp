@@ -3,10 +3,12 @@
 <html>
 <head>
     <title>Product Input</title>
+    <style type="text/css">@import url(<c:url value="/css/test.css"/>);</style>
 </head>
 <body>
     <div>
-        <form:form commandName="product" action="/demo/product/save" method="post">
+        <c:url value="/product/save" var="saveUrl"/>
+        <form:form commandName="product" action="${saveUrl}" method="post"><%--fix it--%>
             <fieldset>
                 <legend>Add a product</legend>
                 <p>
