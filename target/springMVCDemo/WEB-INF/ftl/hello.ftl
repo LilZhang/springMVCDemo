@@ -7,5 +7,11 @@
     </head>
     <body>
         ${content}
+        <br>
+        <p id="aa"></p>
+
+        <script type="application/javascript">
+            document.getElementById("aa").innerHTML="js";
+        </script>
     </body>
 </html>

@@ -48,6 +48,12 @@ public class ProductController {
         return "productDetail";
     }
 
+    @RequestMapping(value = "/test")
+    public  String testJquery(Model model) {
+        model.addAttribute("tests", "hello");
+        return "productTest";
+    }
+
     //another way of validation
     /*@InitBinder
     public void initBinder(WebDataBinder binder) {

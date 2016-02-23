@@ -16,9 +16,10 @@ public class FTLController {
 
     @RequestMapping(value = "/show")
     public ModelAndView showFTL() {
-        ModelAndView mv = new ModelAndView("hello");
+        ModelAndView mv = new ModelAndView("hello2");
         mv.addObject("title", "FTL title");
         mv.addObject("content", "FTL content");
+        logger.info("showFTL called");
         return mv;
     }
 }
